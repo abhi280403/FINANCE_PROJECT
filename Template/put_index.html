@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Put option</title>
+    <style>
+     body
+        {
+            background-image:url('../static/finance_project/image/projectimage3.png');
+        }
+        .container
+        {
+            padding: 10px 10px 10px 10px;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+
+        input[type="text"]
+        {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border:none;
+        }
+        .main_heading
+        {
+            text-decoration-line: underline;
+            text-align: center;
+        }
+        .heading
+        {
+            text-decoration-line: underline;
+        }
+        input[type="submit"]
+        {
+            color: white;
+            background-color: #4DA762;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: Arial;
+            font-size: 15px;
+            border:none;
+        }
+    </style>
+</head>
+<body bgcolor="Grey">
+
+<div class="container">
+    <h1 class="main_heading">Put option</h1>
+
+    <h2 class="heading">Two-Step Binomial</h2>
+    <form action="Put-TwoStep_binomial">
+        rate Value: <input type="text" name="rate">
+        <br>
+        increment Value: <input type="text" name="increment">
+        <br>
+        decrement Value: <input type="text" name="decrement">
+        <br>
+        InitialStockPrice Value: <input type="text" name="InitialStockPrice">
+        <br>
+        StrikePrice Value: <input type="text" name="StrikePrice">
+        <br>
+        MaturityTime Value: <input type="text" name="Maturity">
+        <br>
+        <input type="submit">
+    </form>
+
+    <h2 class="heading">N-step Binomial</h2>
+    <form action="Put-nStep_binomial">
+        n Value: <input type="text" name="steps">
+        <br>
+        rate Value: <input type="text" name="rate">
+        <br>
+        increment Value: <input type="text" name="increment">
+        <br>
+        decrement Value: <input type="text" name="decrement">
+        <br>
+        InitialStockPrice Value: <input type="text" name="InitialStockPrice">
+        <br>
+        StrikePrice Value: <input type="text" name="StrikePrice">
+        <br>
+        MaturityTime Value: <input type="text" name="Maturity">
+        <br>
+        <input type="submit">
+    </form>
+
+    <h2 class="heading">Black-Scholes Formula</h2>
+    <form action="Put-Black-Scholes">
+        rate Value: <input type="text" name="rate">
+        <br>
+        volatility Value: <input type="text" name="volatility">
+        <br>
+        InitialStockPrice Value: <input type="text" name="InitialStockPrice">
+        <br>
+        StrikePrice Value: <input type="text" name="StrikePrice">
+        <br>
+        MaturityTime Value: <input type="text" name="Maturity">
+        <br>
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>

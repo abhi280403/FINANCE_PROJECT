@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        body
+        {
+            background-image:url('../static/finance_project/image/projectimage.png');
+        }
+
+        .container
+        {
+            padding: 10px 10px 10px 10px;
+            border-radius: 4px;
+        }
+        h1
+        {
+            text-decoration: underline;
+        }
+        input[type="submit"]
+        {
+            color: Black;
+            background-color: #539964;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: Arial;
+            font-size: 15px;
+            border:white;
+        }
+    </style>
+</head>
+<body bgcolor="White">
+    <div class="container">
+    <h1>Choose Option</h1>
+    <form action="option1">
+        <input type="submit" value="Call Option">
+    </form>
+        <br>
+    <form action="option2">
+        <input type="submit" value="Put Option">
+
+    </form>
+
+
+    </div>
+
+
+</body>
+</html>
